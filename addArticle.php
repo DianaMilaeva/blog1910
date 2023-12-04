@@ -1,11 +1,12 @@
 <?php
     session_start();
     if(empty($_SESSION['id'])){
-        header("Location: /login.html");
+        header("Location: /login.php");
         exit();
     }
     require_once 'header.php';
-?>
+    ?>
+
     <div class="container my-5">
       <h1 class="text-center my-3">Добавление статьи на сайт</h1>
       <div class="col-sm-6 mx-auto">
@@ -25,6 +26,6 @@
         </form>
       </div>
     </div>
-    <?php
+<?php
 require_once 'footer.php'
 ?>
